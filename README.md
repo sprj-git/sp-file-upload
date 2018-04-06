@@ -27,7 +27,7 @@ The build artifacts will be stored in the `dist/` directory.
 
 Step 3: Upload the files from `dist/` directory into the SharePoint library mentioned in `--deploy-url`
 
-Step 4: Create a (web part) page as per the URL mentioend in `--base-href` to render the SPA. Include a content editor web part to load the content from index.html uploaded in the `--deploy-url` path. Publish the page. 
+Step 4: Create a (web part) page as per the URL mentioned in `--base-href` to render the SPA. Include a content editor web part to load the content from index.html uploaded in the `--deploy-url` path. Publish the page. 
 
 ## Build - PROD mode
 Follow the below steps to generate DEV mode build

@@ -5,8 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
-    "build:poc": "ng build --base-href /teams/dev-gss-poc/SitePages/largefileupload.aspx/ --deploy-url /teams/dev-gss-poc/apps/LargeFileUpload/",
+    "build": "ng build --prod --base-href /teams/prodsite/SitePages/largefileupload.aspx/ --deploy-url /teams/prodsite/apps/LargeFileUpload/",
+    "build:dev": "ng build --base-href /teams/devsite/SitePages/largefileupload.aspx/ --deploy-url /teams/devsite/apps/LargeFileUpload/",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"

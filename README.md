@@ -5,14 +5,24 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 This is sample Angular SPA to upload large file into SharePoint library from a SharePoint web page.
 It works in IE as well as other modern browsers such as Chrome, Firefox, etc.,
 
+## Download & initial setup
+Step 1: Download the repo to local folder.
+
+Step 2: Go to the local folder of the repo where it contains package.json & run the below command. It might take a while depending on your machine & requires internet access.
+
+npm install 
+
+
 ## Build - DEV mode
 Follow the below steps to generate DEV mode build
+
 Step 1: Update the --base-href & --deploy-url parameters of "build:dev" scripts in package.json file
  --base-href should be the URL of the page where the SPA will be rendered.
  --deploy-url should be the URL of the library where the SPA script files will be hosted. 
 
 Step 2: Generate DEV build by running below script. 
 The build artifacts will be stored in the `dist/` directory. 
+
 npm run build:dev
 
 Step 3: Upload the files from `dist/` directory in the SharePoint library mentioned in --deploy-url
@@ -21,6 +31,7 @@ Step 4: Create a (web part) page as per the URL mentioend in --base-href to rend
 
 ## Build - PROD mode
 Follow the below steps to generate DEV mode build
+
 Step 1: Update the --base-href & --deploy-url parameters of "build" scripts in package.json file
  --base-href should be the URL of the page where the SPA will be rendered.
  --deploy-url should be the URL of the library where the SPA script files will be hosted. 

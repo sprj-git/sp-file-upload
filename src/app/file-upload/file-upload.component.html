@@ -1,0 +1,60 @@
+<div>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          SharePoint File Upload
+        </div>
+        <div class="panel-body">
+          <div>
+            <div class="row">
+              <div class="col-md-10">
+                <label class="small">SharePoint Library URL:
+                  <input class="form-control" id="libraryURL" name='libraryURL' type="text">
+                </label>
+                <br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10">
+                <label class="small">Chunk Size:
+                  <input class="form-control" id="chunkSize" name='chunkSize' type="text">
+                </label>
+                <br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10">
+                <input type="file" (change)="checkFile($event)" id="largeFile" name="largeFile" required name="file">
+                <br/>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10">
+                <div [ngClass]="(successMessage == '')?'hidden':''">
+                  <span class="alert alert-success slim-alert glyphicon glyphicon-ok-circle"></span>
+                  <span class="text-success">{{successMessage}}</span>
+                </div>
+                <div [ngClass]="(errorMessage == '')?'hidden':''">
+                  <span class="alert alert-danger slim-alert glyphicon glyphicon-exclamation-sign"></span>
+                  <span class="text-danger">{{errorMessage}}</span>
+                </div>
+                <div [ngClass]="(infoMessage == '')?'hidden':''">
+                  <span class="alert alert-info slim-alert glyphicon glyphicon-info-sign"></span>
+                  <span class="text-info">{{infoMessage}}</span>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-10">
+                <span (click)="uploadFile()" class="btn btn-primary"  [attr.disabled]="((!isValidFile) || (infoMessage !== ''))?'':null" >
+                  Upload
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

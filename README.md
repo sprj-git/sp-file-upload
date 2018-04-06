@@ -38,6 +38,7 @@ Step 1: Update the --base-href & --deploy-url parameters of "build" scripts in p
 
 Step 2: Generate PROD build by running below script. 
 The build artifacts will be stored in the `dist/` directory. 
+
 npm run build
 
 Step 3: Upload the files from `dist/` directory in the SharePoint library mentioned in --deploy-url

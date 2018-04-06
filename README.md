@@ -39,4 +39,4 @@ After succcessful build and deployment, the SPA should render three controls
 - A textbox to specify the SharePoint library URL where the file to be uploaded (Note: please provider server relative path. For ex: /teams/devsite/documents/forms/allitems.aspx)
 - A textbox to specify the chunck size in Kb, it should be a number value. No validation is included currently.
 - File picker to specify the file to upload.
-Once above details are filled, click on "Upload" button to the file. It'll show the file upload progress and status the completion.
+- Once above details are filled, click on "Upload" button to the file. It'll show the file upload progress and status the completion.
